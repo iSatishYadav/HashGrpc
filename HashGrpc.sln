@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashGrpc", "HashGrpc\HashGrpc.csproj", "{CCEAFCCA-3DFE-447D-B43F-977E19965485}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashGrpc.Client", "HashGrpc.Client\HashGrpc.Client.csproj", "{1B51AE65-2988-4502-ACA9-EA4A9F2A48CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCEAFCCA-3DFE-447D-B43F-977E19965485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCEAFCCA-3DFE-447D-B43F-977E19965485}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCEAFCCA-3DFE-447D-B43F-977E19965485}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCEAFCCA-3DFE-447D-B43F-977E19965485}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B51AE65-2988-4502-ACA9-EA4A9F2A48CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B51AE65-2988-4502-ACA9-EA4A9F2A48CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B51AE65-2988-4502-ACA9-EA4A9F2A48CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B51AE65-2988-4502-ACA9-EA4A9F2A48CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FFB5002E-B29A-4CD4-B0A0-96D1F510AB1F}
+	EndGlobalSection
+EndGlobal

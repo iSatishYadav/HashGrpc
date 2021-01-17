@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "HashGrpc.Protos";
+
+package hash;
+
+service Hash {
+	rpc GetHash(HashRequest) returns (HashResponse);
+}
+
+message HashRequest {
+	string input = 1;
+}
+
+message HashResponse {
+	string hash = 1;
+}

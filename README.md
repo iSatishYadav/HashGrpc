@@ -63,7 +63,7 @@ Let's build a Hashing `gRPC` Service which takes a `string` input and returns `S
 ![New Proto Hash](assets/images/new-proto-hash.png)
 ![New Proto Hash Created](assets/images/new-proto-hash-created.png)
 
-* Copy this code to newly created `hash.proto'
+* Copy this code to newly created `hash.proto`.
 
 ````protobuf
 syntax = "proto3";
@@ -109,7 +109,8 @@ Add these lines to the `csproj` of your project. This lets Visual Studio known t
 ### Implement the Service
 
 * Under Services folder, create a new `Class` named `HashService`.
-![New Service Hash](assets/images/new-service-hash.png)
+ 
+    ![New Service Hash](assets/images/new-service-hash.png)
 * Copy this code to the newly created Service.
 
 ````csharp
@@ -235,6 +236,7 @@ Let's break it down:
 * Now we can call the method by passing the `HashRequest` for which we want to get the `SHA 256` hash.
 
 > Notice the Service had method `GetHash` but the client has 2 methods `GetHash` and `GetHashAsync`. That's thanks to the tooling which generated both Synchronous and Asynchronous versions of our `GetHash` method.
+> 
 >![Client Sync And Async Get Hash](assets/images/client-sync-and-async-get-hash.png)
 
 Run both Client and Service and you'll see the output something like this:

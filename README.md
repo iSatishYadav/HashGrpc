@@ -1,5 +1,5 @@
-# Creating a gRPC (Micro?)Service (and Client) in `.NET Core`
-If you're here, I'm assuming you've already heard about gRPC and want to see some code. In case you've not heard about it, an excerpt from [Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/grpc#what-is-grpc):
+# Creating a `gRPC` (Micro?)Service (and Client) in `.NET Core`
+Hi, in this tutorial we're going to create a`gRPC` Service and Client using `.NET Core`. I'm assuming you've already heard about `gRPC` and want to see some code. In case you haven't, here's an excerpt from [Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/grpc#what-is-grpc):
 ## What is `gRPC`? 
 > gRPC is a modern, high-performance framework that evolves the age-old remote procedure call (RPC) protocol. At the application level, gRPC streamlines messaging between clients and back-end services. Originating from Google, gRPC is open source and part of the Cloud Native Computing Foundation (CNCF) ecosystem of cloud-native offerings.
 
@@ -96,7 +96,8 @@ Let's break it down.
 
 ### Generate Server stub
 * Edit the `.csproj` file of your project:
- ![Edit Csproj](assets/images/edit-csproj.png)
+    
+    ![Edit Csproj](assets/images/edit-csproj.png)
 
 Add these lines to the `csproj` of your project. This lets Visual Studio known that we want to generate Server code for our `gRPC` service.
 ````xml
@@ -188,6 +189,7 @@ Install following nuget packages:
 * Add our `hash.proto` to a new Folder named `Protos`.
 
     ![Client New Proto](assets/images/client-new-proto.png)
+
 * Edit the `.csproj` of the project and following lines:
 
 ````xml
@@ -238,18 +240,20 @@ Let's break it down:
 Run both Client and Service and you'll see the output something like this:
 
 * Client:
-![Client Output](assets/images/client-output.png)
+
+    ![Client Output](assets/images/client-output.png)
 * Service
-![Client Log](assets/images/client-log.png)
+
+    ![Client Log](assets/images/client-log.png)
 
 > `gRPC` needs HTTP2 under the hood for communication. HTTP2 may not be supported everywhere yet (unfortunately).
 
 Congratulations! You've just created a new `gRPC` Service and Client.
 
-** Next Steps
+## Next Steps
 
 Read more about:
 * [Protocol Buffers](https://developers.google.com/protocol-buffers)
 * [gRPC](https://grpc.io/)
-* [gRPC on ASP.NET Core] (https://docs.microsoft.com/en-us/aspnet/core/grpc/?view=aspnetcore-3.1)
-* [HTTP 2] (https://developers.google.com/web/fundamentals/performance/http2/)
+* [gRPC on ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/grpc/?view=aspnetcore-3.1)
+* [HTTP 2](https://developers.google.com/web/fundamentals/performance/http2/)

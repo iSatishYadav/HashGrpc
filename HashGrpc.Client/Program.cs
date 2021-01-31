@@ -15,6 +15,7 @@ namespace HashGrpc.Client
             var client = new HashClient(channel);
             var response = await client.GetHashAsync(new HashRequest { Input = "Test" });
             Console.WriteLine($"Hash: {response.Hash}");
+            Console.ReadKey();
         }
     }
 }
